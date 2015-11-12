@@ -10,6 +10,9 @@ def key_for_min_value(name_hash)
     end
   }
 
+  #makes much more sense to use this function than to put an extra temp variable in the iterator to hold the key imo
   name_hash.key(current_low)
+
+
 
 end
