@@ -5,7 +5,7 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   else
-      lowest_value = Array.new
+    lowest_value = Array.new
     name_hash.each do |key, value|
       if !lowest_value.empty? && value < lowest_value[0]
         lowest_value.replace([value])
