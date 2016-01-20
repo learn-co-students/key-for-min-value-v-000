@@ -3,6 +3,8 @@
 require 'pry'
 
 
+=begin 
+
 def key_for_min_value(name_hash)
   collection = [ ]
   name_hash.each do |name, number|
@@ -18,3 +20,32 @@ def key_for_min_value(name_hash)
    end    
   end
 end
+
+=end
+
+def key_for_min_value(name_hash)
+
+  #if name_hash.empty?
+   # return nil
+  #end
+
+  values = [ ]
+
+  name_hash.each {|x, y| values << y}
+
+  lowest = values.first
+  if lowest == nil
+    return nil
+  end
+  name_hash.each do |name, number|
+    if number < lowest
+      lowest = number
+    end
+  end
+  lowest
+    name_hash.each do |name, number|
+     if lowest == number
+      return name
+      end
+    end
+  end
