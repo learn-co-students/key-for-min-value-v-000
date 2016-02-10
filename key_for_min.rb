@@ -3,7 +3,7 @@
 
 def key_for_min_value(namehash)
   lkey = nil
-  lvalue = Float::INFINITY
+  lvalue = 100000
   namehash.each do |name, num|
     if num < lvalue
       lvalue = num
