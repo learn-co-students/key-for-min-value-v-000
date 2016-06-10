@@ -5,12 +5,9 @@ def key_for_min_value(name_hash)
     names = []
     values = []
     name_hash.each do |name, value|
-       if values.empty?
+       if values.empty? || value < values.last
            values << value
            names << name
-       elsif value < values.last
-            values << value 
-            names << name
         end    
     end
     names.last
