@@ -8,14 +8,14 @@ def key_for_min_value(name_hash)
       values << value
     end
 
-    small = ""
+    smallest = ""
     i = 0
     while i < values.size
       if values[i] == values[0]
-        small = values[i]
+        smallest = values[i]
         i += 1
-      elsif values[i] < small
-        small = values[i]
+      elsif values[i] < smallest
+        smallest = values[i]
         i += 1
       else
         i += 1
@@ -24,7 +24,7 @@ def key_for_min_value(name_hash)
 
     goal = ""
     name_hash.collect do |key, value|
-      if name_hash[key] == small
+      if name_hash[key] == smallest
         goal = key
       end
     end
