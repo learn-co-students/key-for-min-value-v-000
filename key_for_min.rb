@@ -1,20 +1,12 @@
-
 def key_for_min_value(name_hash)
-  variable = nil
-  lowest_val = nil
+  name = nil
+  lowest_value = nil
   name_hash.each do |key, value|
-    if lowest_val.nil?
-      lowest_val = value
-      variable = key
-  end
-    if value < lowest_val
-      lowest_val = value
-      variable = key
-      end
+    if lowest_value.nil? || value < lowest_value
+      lowest_value = value
+      name = key
     end
-    variable
   end
-
-
-
+  name
+end
 
