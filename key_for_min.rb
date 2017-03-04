@@ -3,11 +3,10 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  return nil if name_hash.empty?
-  lowest_price = 1000000000000
+  lowest_price = nil
   cheapest_item = nil
   name_hash.each do |item, current_price|
-    if lowest_price > current_price
+    if lowest_price == nil || lowest_price > current_price
       cheapest_item = item
       lowest_price = current_price
     end
