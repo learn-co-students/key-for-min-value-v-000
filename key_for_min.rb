@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
     if number == 0
       number = value
     else
-      if number <=> value == -1
+      if number <=> value == -1 #incorrect
         number = value
       end
     end
