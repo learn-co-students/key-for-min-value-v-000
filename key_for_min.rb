@@ -16,13 +16,20 @@ def key_for_min_value(name_hash)
             c_key = x.to_s
       end
     end
-
     name_hash.key(c_value.to_i)
-
-
 end
 
 
-hash = {:blake => 500, :ashley => 2, :adam => 4}
+# other way to solve
+def key_for_min_value(has)
+    lowest_key = nil
+    lowest_value = nil
+    hash.each do |k,v|
+        if lowest_value == nil || v < lowest_value
+              lowest_value = v
+              lowest_key = k
 
-key_for_min_value(hash)
+        end
+    end
+    lowest_key
+end
