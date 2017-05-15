@@ -5,12 +5,14 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   else
-    temp = 1000
+    lowest = nil
+    key = nil
     name_hash.each do |k, v|
-      if v < temp
-        temp = v
+      if lowest == nil || v < lowest
+        lowest = v
+        key = k
       end
     end
-    name_hash.index(temp)
+    key
   end
 end
