@@ -13,7 +13,10 @@ def key_for_min_value(name_hash)
       low = x
     end
   end
-  name_hash.key(low)
+  name_hash.each do |key,value|
+    if name_hash(key) == low
+      return key
+    end
 end
 
 key_for_min_value(val1:23,val2:2)
