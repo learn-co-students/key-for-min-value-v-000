@@ -13,7 +13,7 @@
       #low_value = value
     #end
   #end
-  #low_key
+  #low_key #returns the key with the lowest value
 #end
 
 
