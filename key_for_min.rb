@@ -1,7 +1,7 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-#\\\\\\ALTERNATIVE SOLUTION FROM GITHUB//////
+#\\\\\\ALTERNATIVE SOLUTION FROM GITHUB FORUM//////
 #def key_for_min_value(name_hash)
   #low_key = nil #set low_key to nil in order for it to return nil when called and therefore not show up
   #low_value = Float::INFINITY #saw this method online examples, not sure exactly how it works yet
