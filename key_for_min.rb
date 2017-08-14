@@ -9,11 +9,7 @@ def key_for_min_value(name_hash)
   name_hash.each {|name, value| arr_new << value}
 
   min = arr_new[0]
-  arr_new.each do |i|
-    if i < min
-      min = i
-    end
-  end
+  arr_new.each {|i| min = i if i < min}
 
   name_hash.each {|name, value| return name if value == min}
 end
