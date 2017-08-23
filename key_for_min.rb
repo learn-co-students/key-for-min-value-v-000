@@ -5,7 +5,7 @@ require 'pry'
 
 def key_for_min_value(name_hash)
 
-    return_val = ""
+    return_val = nil
     num_val = 0
 
     name_hash.each do |key, value|
@@ -15,9 +15,6 @@ def key_for_min_value(name_hash)
       end
     end
 
-    if return_val == ""
-      nil
-    else
       return_val
-    end
+    
 end
