@@ -3,4 +3,19 @@
 
 def key_for_min_value(name_hash)
 
+    lowest_key = nil
+    lowest_value = 100
+
+      name_hash.collect do |key, value|
+         if value < lowest_value
+            lowest_key = key
+            lowest_value = value
+          end
+    end
+
+    if name_hash.empty?
+      nil
+    else
+    lowest_key
+    end
 end
