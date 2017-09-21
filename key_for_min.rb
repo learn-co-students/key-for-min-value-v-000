@@ -2,7 +2,7 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  lowest = 10000
+  lowest = 10000 # Ashley had me use a large number, and Corinne recommended using nil. I can't get nil to work without refactoring the code.
   lowest_key = nil #start with a high number that will be replaced
   name_hash.each do |name, value|
     if value < lowest #if the current value is less than the current lowest number then it must in fact be the lowest number
