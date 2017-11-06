@@ -19,8 +19,3 @@ def key_for_min_value(name_hash)
     return nil
   end
 end
-
-#name_hash.select do |key, value|
-#  value == x[0]
-#  return key
-#end
