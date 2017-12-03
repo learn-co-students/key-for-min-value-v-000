@@ -1,6 +1,14 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
-
-def key_for_min_value(name_hash)
-
+def key_for_min_value(dict)
+	mv=nil
+	mk=nil
+	dict.each do |k, v|
+    if mv == nil
+      mv = v
+      mk = k
+		elsif v < mv
+			mv=v
+			mk=k
+		end
+	end
+	return mk
 end
