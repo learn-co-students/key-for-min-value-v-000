@@ -2,8 +2,8 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 # note to self, you can do the following code too:
-#def sorting(ikea)
-#ikea.min_by{|item,price| price}[0]
+#key_for_min_value(name_hash)
+#name_hash.min_by{|item,price| price}[0]
 #end
 
 def key_for_min_value(name_hash)
