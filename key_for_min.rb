@@ -3,7 +3,7 @@
 
 # note to self, you can do the following code too:
 #key_for_min_value(name_hash)
-#name_hash.min_by{|item,price| price}[0]
+#name_hash.min_by{|key,value| value}[0]
 #end
 
 def key_for_min_value(name_hash)
