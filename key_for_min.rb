@@ -3,7 +3,7 @@
 require 'pry'
 def key_for_min_value(name_hash)
   return nil if name_hash.empty?
-    
+  binding.pry  
   min = name_hash.first[1]
   low_key = name_hash.first[0]
   name_hash.each do |key, val|
