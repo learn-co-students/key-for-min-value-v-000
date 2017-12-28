@@ -18,5 +18,6 @@ require "pry"
       key_for_min_value = key
    end
   end
+  # then we ask it for the newly found key value
     key_for_min_value
 end
