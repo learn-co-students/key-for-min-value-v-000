@@ -10,9 +10,9 @@ require "pry"
      #return key that point to the smallest value of the set
     if min_value == nil || value < min_value
        #order of arrangment is key
-       # we saying when line 9 runs the 1st time  = to nil so set min value to the value
+       # we saying when the "IF" line runs the 1st time  = to nil so set min value to the value
        # THEN when run 2nd time, when value is < then min_value set min_value = value
-        #  we told it hole on to the current found value.
+        #  we told it hold on to the current found value.
         min_value = value
     #  binding.pry
       key_for_min_value = key
