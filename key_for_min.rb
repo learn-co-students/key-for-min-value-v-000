@@ -3,26 +3,26 @@
 
 def key_for_min_value(name_hash)
   min_value_key = ""
-  keys = [ ]
-  values = [ ]
+  hash_keys = [ ]
+  hash_values = [ ]
 
   name_hash.each do |key, value|
     if name_hash.empty?
       return nil
     else
-      keys << key
-      values << value
+      hash_keys << key
+      hash_values << value
     end
   end
 
   i = 0
-  min_value = values[0]
-  min_value_key = keys[0]
+  min_value = hash_values[0]
+  min_value_key = hash_keys[0]
 
-  while (i < values.length)
-    if (values[i] < min_value)
-      min_value = values[i]
-      min_value_key = keys[i]
+  while (i < hash_values.length)
+    if (hash_values[i] < min_value)
+      min_value = hash_values[i]
+      min_value_key = hash_keys[i]
     end
     i = i + 1
   end
