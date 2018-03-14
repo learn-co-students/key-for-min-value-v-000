@@ -3,10 +3,8 @@
 
 def key_for_min_value(name_hash)
   if name_hash.length > 0
-    name_hash.collect do |key, value|
-      value[2] <=> value[1]
-    end
-    name_hash.first[0]
+    array = name_hash.sort_by {|k, v| v}.to_a
+    return array[0][0]
   else nil
   end
 end
