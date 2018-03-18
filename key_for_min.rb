@@ -3,15 +3,21 @@
 
 def key_for_min_value(hash)
   return nil if hash == {}
-  #holder = hash.values.max
-  hold = hash.max_by{|k,v| v}
-  holder = hold[1]
+  min = 0
+  max = 0
+  first_time = true
   hold_name = ""
   hash.each do |name, value|
-     if value < holder
-     hold_name = name
-     holder = value
-     end
-   end
-   return hold_name
+    if first_time
+      min = value
+      max = value
+      hold_name = name
+      first_time = false
+    elsif value < min && value < max
+      min = value
+      hold_name = name
+    else max = value
+    end
+  end
+  hold_name
 end
