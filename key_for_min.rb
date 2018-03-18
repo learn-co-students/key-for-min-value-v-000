@@ -4,7 +4,8 @@
 def key_for_min_value(hash)
   return nil if hash == {}
   #holder = hash.values.max
-  holder = 1000000
+  hold = hash.max_by{|k,v| v}
+  holder = hold[1]
   hold_name = ""
   hash.each do |name, value|
      if value < holder
