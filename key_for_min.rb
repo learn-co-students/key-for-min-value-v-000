@@ -12,9 +12,6 @@ def key_for_min_value(hash)
 end
 =begin
 def key_for_min_value(name_hash)
-
-    return  name_hash.collect.min_by {|keys,values| keys}
-
-      #name_hash
+    return  name_hash.collect.min_by {|keys,values| values}
 end
 =end
