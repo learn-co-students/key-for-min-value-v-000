@@ -6,8 +6,7 @@ hash.each do |key, value|
   if smallest_value == value || value < smallest_value
    smallest_value = value
    smallest_key = key
- else hash == nil || hash == {}
-  return  nil
+
 end
 end
 smallest_key
