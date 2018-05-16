@@ -1,7 +1,6 @@
 def key_for_min_value(name_hash)
   return nil if name_hash == {}
-  key = name_hash.max[0]
-  high = name_hash.max[1]
+  high = name_hash.max_by { |key, value| value }[1]
   arr = name_hash.flatten
   step = 1
 
