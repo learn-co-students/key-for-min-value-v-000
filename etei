@@ -1,0 +1,32 @@
+
+[1mFrom:[0m /home/Samoth112/key-for-min-value-v-000/key_for_min.rb @ line 26 Object#key_for_min_value:
+
+     [1;34m7[0m: [32mdef[0m [1;34mkey_for_min_value[0m(name_hash)
+     [1;34m8[0m:   nums = name_hash.collect [32mdo[0m |name, num|
+     [1;34m9[0m:     num
+    [1;34m10[0m:   [32mend[0m
+    [1;34m11[0m: 
+    [1;34m12[0m:   current_min = nums.first
+    [1;34m13[0m: 
+    [1;34m14[0m:   running_key = name_hash.collect [32mdo[0m |name, num|
+    [1;34m15[0m:     [32mif[0m current_min > num
+    [1;34m16[0m:       current_min = num
+    [1;34m17[0m:       name
+    [1;34m18[0m:     [32mend[0m
+    [1;34m19[0m:   [32mend[0m
+    [1;34m20[0m: 
+    [1;34m21[0m:   running_key = running_key.collect [32mdo[0m |key|
+    [1;34m22[0m:     key != [1;36mnil[0m
+    [1;34m23[0m:   [32mend[0m
+    [1;34m24[0m: 
+    [1;34m25[0m: 
+ => [1;34m26[0m:   binding.pry
+    [1;34m27[0m: 
+    [1;34m28[0m:   [1;34m#name_hash.collect do |name, num|[0m
+    [1;34m29[0m:     [1;34m#if current_min > num[0m
+    [1;34m30[0m:       [1;34m#current_min = num[0m
+    [1;34m31[0m:       [1;34m#name[0m
+    [1;34m32[0m:     [1;34m#end[0m
+    [1;34m33[0m:   [1;34m#end[0m
+    [1;34m34[0m: [32mend[0m
+
