@@ -22,11 +22,12 @@ def key_for_min_value(name_hash)
       if baby_value == nil 
         baby_value = value 
         baby_value_key = key 
-      elsif
-        baby_value > value 
+      
+      elsif baby_value > value 
         baby_value = value
         baby_value_key = key 
-      end
     end
-    return baby_value_key
-  end 
+  end
+    
+  return baby_value_key
+end 
