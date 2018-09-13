@@ -4,11 +4,11 @@
 def key_for_min_value(name_hash)
   min_value = 1000000
   key_value = [nil]
-  name_hash.each do |key, value|
+  name_hash.collect do |key, value|
     if value < min_value
+      key_value[0] = key
       min_value = value
-      key_value.push(key)
     end
   end
-  key_value.pop
+  key_value[0]
 end
