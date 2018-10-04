@@ -4,6 +4,9 @@
 
 
 def key_for_min_value(name_hash)
-  name_hash.each.collect{ |key,value| key }.last
+  if name_hash.empty?
+    return nil
+  else
+  name_hash.reduce{ |f, s| f.last > s.last ? s : f }.first
 end
-
+end
