@@ -4,15 +4,19 @@
 #hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
-  smallname = ""
-  smalley = 2
+  smallname = nil
+  smallval = 15
   name_hash.each do |name, value|
-    if value < smalley
+    if value < smallval
       smallname = name
+    else
+      smallname
     end
   end
   smallname
 end
+
+
 
 =begin
 winner = ""
