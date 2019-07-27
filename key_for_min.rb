@@ -1,6 +1,30 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
-
+require "pry"
 def key_for_min_value(name_hash)
+  value_array = []
+  key_array = []
+  final_value = ""
+  smallest_value = 0
+  new_array = []
+  
+  name_hash.each do |key, value|
+    key_array << key
+    value_array << value 
+  end
+  
+  value_array.each do |value|
+    if value < value_array[0]
+      smallest_value -= smallest_value
+      smallest_value += value
+    elsif value > value_array[0]
+    smallest_value -= smallest_value
+    smallest_value += value_array[0]
+  end
+end
 
+  key_array.each do |key|
+    if name_hash[key] == smallest_value
+      new_array.push(key)
+    end
+  end
+  new_array[0]
 end
