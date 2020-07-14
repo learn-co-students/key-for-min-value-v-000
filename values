@@ -1,0 +1,31 @@
+
+[1mFrom:[0m /home/anlsanchez5/key-for-min-value-v-000/key_for_min.rb @ line 19 Object#key_for_min_value:
+
+     [1;34m4[0m: [32mdef[0m [1;34mkey_for_min_value[0m(name_hash)
+     [1;34m5[0m:   [32mif[0m name_hash.empty?
+     [1;34m6[0m:     [1;36mnil[0m
+     [1;34m7[0m:   [32melse[0m
+     [1;34m8[0m:     values = []
+     [1;34m9[0m:     name_hash.each {|key, value| values << value}
+    [1;34m10[0m:     i = [1;34m0[0m
+    [1;34m11[0m:     two = i + [1;34m1[0m
+    [1;34m12[0m:     length = values.length - [1;34m2[0m
+    [1;34m13[0m:     [32mwhile[0m i < length
+    [1;34m14[0m:        [32mif[0m values[i] < values[two]
+    [1;34m15[0m:          values[i] <=> values[two]
+    [1;34m16[0m:        [32mend[0m
+    [1;34m17[0m:        i += [1;34m1[0m
+    [1;34m18[0m:      [32mend[0m
+ => [1;34m19[0m: binding.pry
+    [1;34m20[0m:     lowest = values.last
+    [1;34m21[0m: 
+    [1;34m22[0m:     name_hash.each [32mdo[0m |key, value|
+    [1;34m23[0m:       [32mif[0m value == lowest
+    [1;34m24[0m:         [32mreturn[0m key
+    [1;34m25[0m:       [32melse[0m
+    [1;34m26[0m:         [1;36mnil[0m
+    [1;34m27[0m:       [32mend[0m
+    [1;34m28[0m:     [32mend[0m
+    [1;34m29[0m:   [32mend[0m
+    [1;34m30[0m: [32mend[0m
+
