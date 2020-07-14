@@ -1,0 +1,39 @@
+i = 0
+if new_array.each_with_index do |integer, index|
+
+while i =< array.length
+  integer < new_array[-1]
+  i =+ 1
+puts integer
+index
+end
+end
+end
+
+
+.select do |integer|
+    a = 0
+    integer == new_array[a]
+    if
+      integer < new_array[a]
+      puts integer
+      a += 1
+    elsif
+      integer > new_array[a]
+    end
+  end
+end
+
+
+new_array = []
+name_hash.collect do |furniture, price|
+  new_array << price
+  if price < new_array[index]
+    puts price
+    index += 1
+  elsif
+    name_hash = []
+    "nil"
+  end
+end
+end
