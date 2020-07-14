@@ -3,4 +3,22 @@
 
 def key_for_min_value(name_hash)
 
+    lowest_value = nil
+    lowest_key = nil
+    name_hash.collect do |key, value|
+      if lowest_value == nil || value < lowest_value
+        lowest_value = value
+        lowest_key = key
+      end
+    end
+lowest_key
 end
+
+#if value1 < value2
+#  min_value = value1
+#elsif value1 == value2
+#  min_value = value1
+#elsif value1 > value2
+#  min_value = value2
+#end
+#  min_value
