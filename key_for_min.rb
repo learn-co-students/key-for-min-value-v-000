@@ -1,6 +1,43 @@
-# prereqs: iterators, hashes, conditional logic
+# 2. Build a method `key_for_min_value` that accepts an argument of a hash. This method should iterate over the hash
+# and return the *key* (not the value!) that points to the smallest value of the set. If the method is called and
+# passed an argument of an empty hash, it should return `nil`.
+# Here are some examples:
+# ```ruby
+# ikea = {:chair => 25, :table => 85, :mattress => 450}
+# key_for_min_value(ikea)
+# # => :chair
+#
+# veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
+# key_for_min_value(veggies)
+# # => "apple"
+# ```
+# **A Few Restrictions:**
+# We want you to build this on your own. Some of the following methods are helpful but ***off limits*** for this exercise.
+ # (We'll cover a few below in more depth in subsequent lessons).
+# * `#keys`
+# * `#values`
+# * `#min`
+# * `#sort`
+# * `#min_by`
+# **A Helpful Hint:**
+# * Think about how to determine which value is the lowest. Do you need to compare each value to something as you iterate?
+# * Think about how to collect or store the correct key. Remember that you need your method to return *just this key*.
+
+# prereqs:  iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-
+  if name_hash == {}
+    return nil
+  else
+      min_value = name_hash.first[1]
+      min_key = name_hash.first[0]
+      name_hash.each do |key, value|
+        if value < min_value
+          min_value = value
+          min_key = key
+        end
+      end
+      min_key
+  end
 end
