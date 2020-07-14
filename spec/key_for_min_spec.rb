@@ -1,4 +1,4 @@
-describe "smallest hash value" do
+ describe "smallest hash value" do
 
   it "does not call the `#keys` method" do
     hash = {:blake => 500, :ashley => 2, :adam => 1}
